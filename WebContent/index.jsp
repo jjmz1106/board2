@@ -7,6 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-그냥
+	<form action="/board.do" method="get">
+		<input type="text" name="name">
+	<button>GET전송</button>
+	</form>
+	
+	<form action="/board.do" method="post">
+		<input type="text" name="name">
+	<button>POST전송</button>
+</form>
 </body>
 </html>
