@@ -7,14 +7,15 @@ import java.util.Map;
 public class MapTest3 {
 	
 	public static void main(String[] args) {
-		Map<Integer,String> map = new HashMap<>();
-		map.put(1, "졸려");
-		map.put(2, "그냥");
-		map.put(3, "그래서");
-		Iterator<Integer> it = map.keySet().iterator();
+		Map<String,String> m = new HashMap<>();
+		m.put("123", "125");
+		m.put("2345", "12354");
+		Iterator<String> it = m.keySet().iterator();
 		while(it.hasNext()) {
-			Integer key = it.next();
-			System.out.println(key + " : " + map.get(key));
+			String key = it.next();
+			System.out.println(key + " : " + m.get(key));
+
+		
 		}
 	}
 
